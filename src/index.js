@@ -1,16 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import theme from "./theme";
 import styled from "styled-components";
-import { Grommet } from "grommet";
 import * as serviceWorker from "./serviceWorker";
 
 import { createBrowserHistory } from "history";
-import { Provider } from "react-redux";
-import configureStore from "./store";
-import initialState from "./store/initialState";
-import App from "./containers/app/App";
+import App from "./App";
 
 const FlexWrapper = styled.div`
   display: flex;
@@ -24,16 +19,11 @@ const FlexWrapper = styled.div`
 `;
 
 export const history = createBrowserHistory();
-const store = configureStore(initialState, history);
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Grommet theme={theme}>
-      <FlexWrapper>
-        <App />
-      </FlexWrapper>
-    </Grommet>
-  </Provider>,
+  <FlexWrapper>
+    <App />
+  </FlexWrapper>,
   document.getElementById("root")
 );
 
