@@ -173,8 +173,8 @@ section {
 .highlight {
   font-size: 14px;
   line-height: 150%;
-  color: #1c3b4f;
-  font-weight: 900;
+  color: #ff1100;
+  font-weight: bolder;
   margin: 14px 0 4px;
 }
 
@@ -194,6 +194,12 @@ section {
   font-size: 14px;
   line-height: 150%;
   color: #000000;
+}
+.detail span{
+  color: #58d058 !important;
+  font-size: 16px;
+  line-height: 140%;
+  margin: 0px 6px 0 0;
 }
 
 .experience ul,
@@ -220,16 +226,13 @@ section {
 }
 .contact a,
 .product-links a {
-  color: #000000;
+  color: #0791e8;
   font-weight: 600;
   cursor: pointer;
 }
-.product-links a{
-  color: #1c3b4f;
-}
 
 .skills .detail{
-  margin: 8px 16px 0px 0px;
+  margin: 6px 8px 0px 0px;
   font-weight: 600;
 }
 

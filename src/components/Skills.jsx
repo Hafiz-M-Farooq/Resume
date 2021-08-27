@@ -7,7 +7,7 @@ const Skills = () => {
       <h1 className="label">Skills</h1>
       <div className="row" style={{ flexWrap: "wrap", marginTop: 16 }}>
         {details.skills.map((skill, index) => (
-          <p className="detail" key={index + 1}>{`${skill}`}</p>
+          <p className="detail" key={index + 1}><span>✓</span> {`${skill}`}</p>
         ))}
       </div>
     </div>
